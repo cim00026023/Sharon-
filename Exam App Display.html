@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exam App</title>
+        <style>
+            table{
+                width: 50%;
+                border-collapse: collapse;
+                margin: 20px auto;
+            }
+            th, td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 8px;
+            }
+            h1, p{
+                text-align: center;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Exam App</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>CIM 322</th>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Average</td>
+                <td id="average"></td>
+            </tr>
+        </table>
+        <P>Thanks for using the<strong>Exam App</strong></P>
+        <script>
+            const scores=[80,40];
+            const average=Scores.reduce((a,b)=>a+b)/scores.length;
+            document.getElementByid('average').textContent=average;
+            </script>
+    </body>
+</html>
